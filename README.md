@@ -3,34 +3,32 @@
 Este repositorio contiene el código desarrollado para el Trabajo de Fin de Grado (TFG), centrado en la detección de comportamientos anómalos en logs de usuarios mediante técnicas estadísticas y de aprendizaje automático. Los scripts están organizados por detectores y se pueden ejecutar de forma independiente.
 
 ## 📁 Estructura del proyecto
-├── split.py # Script para dividir el dataset CLUE-LDS por periodos
+├── split.py                        # Script para dividir el dataset CLUE-LDS por periodos
 ├── DETECTORES/
-│ ├── DetectorPerfilComportamiento/
-│ │ ├── D1_anomaliaA1.py
-│ │ ├── D1_anomaliaA3.py
-│ │ ├── GraficasMetricas.py
-│ │ ├── Mejores-Peores_Usuarios.py
-│ │ └── SeleccionListaUsuarios.py
-│ │
-│ ├── DetectorPerfilHorario/
-│ │ ├── D2.py
-│ │ ├── GraficasMetricas.py
-│ │ ├── GraficasUsuarios.py
-│ │ ├── MejoresyPeoresUsuarios.py
-│ │ └── SeleccionListaEventos.py
-│ │
-│ ├── DetectorDiaSemana/
-│ │ ├── D3.py
-│ │ ├── D4.py
-│ │ ├── CalculoMedias.py
-│ │ ├── GraficasMetricas.py
-│ │ └── Mejores_Peores_Usuarios.py
-│ │
-│ └── DetectorEWMA/
-│ ├── D5.py
-│ ├── D6.py
-│ ├── GraficasMetricas.py
-│ └── GraficasUsuarios.py
+│   ├── DetectorPerfilComportamiento/
+│   │   ├── D1_anomaliaA1.py
+│   │   ├── D1_anomaliaA3.py
+│   │   ├── GraficasMetricas.py
+│   │   ├── Mejores-Peores_Usuarios.py
+│   │   └── SeleccionListaUsuarios.py
+│   ├── DetectorPerfilHorario/
+│   │   ├── D2.py
+│   │   ├── GraficasMetricas.py
+│   │   ├── GraficasUsuarios.py
+│   │   ├── MejoresyPeoresUsuarios.py
+│   │   └── SeleccionListaEventos.py
+│   ├── DetectorDiaSemana/
+│   │   ├── D3.py
+│   │   ├── D4.py
+│   │   ├── CalculoMedias.py
+│   │   ├── GraficasMetricas.py
+│   │   └── Mejores_Peores_Usuarios.py
+│   └── DetectorEWMA/
+│       ├── D5.py
+│       ├── D6.py
+│       ├── GraficasMetricas.py
+│       └── GraficasUsuarios.py
+
 
 
 
@@ -40,7 +38,7 @@ El proyecto sigue una estructura en tres fases: preparación de datos, ejecució
 1️º Preparación previa
 Antes de ejecutar los detectores es necesario generar las listas de usuarios o eventos filtrados:
 
-- Ejecutar el scriptSeleccionListaUsuarios.py: este script crea un archivo csv con la lista de usuarios seleccionados que usaran los detectores
+- Ejecutar el script SeleccionListaUsuarios.py: este script crea un archivo csv con la lista de usuarios seleccionados que usaran los detectores
 
 - Ejecutar el script SeleccionListaEventos.py: este script imprime la lista de eventos seleccionados (este no es necesario porque ya esta incluido en los detectores
 
