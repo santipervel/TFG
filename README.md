@@ -3,6 +3,8 @@
 Este repositorio contiene el código desarrollado para el Trabajo de Fin de Grado (TFG), centrado en la detección de comportamientos anómalos en logs de usuarios mediante técnicas estadísticas y de aprendizaje automático. Los scripts están organizados por detectores y se pueden ejecutar de forma independiente.
 
 ## 📁 Estructura del proyecto
+
+```text
 ├── split.py                        # Script para dividir el dataset CLUE-LDS por periodos
 ├── DETECTORES/
 │   ├── DetectorPerfilComportamiento/
@@ -28,6 +30,7 @@ Este repositorio contiene el código desarrollado para el Trabajo de Fin de Grad
 │       ├── D6.py
 │       ├── GraficasMetricas.py
 │       └── GraficasUsuarios.py
+```
 
 
 
